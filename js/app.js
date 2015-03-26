@@ -16,6 +16,10 @@ $( document ).ready(function() {
 			this.catNameElem = document.getElementById('cat-name');
 			this.catImageElem = document.getElementById('cat-img');
 
+			this.catImageElem.addEventListener('click', function(){
+				octopus.incrementCounter();
+			});
+
 			this.render();
 		},
 		render: function() {
