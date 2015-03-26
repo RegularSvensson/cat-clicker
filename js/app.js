@@ -12,11 +12,13 @@ $( document ).ready(function() {
 	/* ======= View ======= */
 	var catView = {
 		init: function() {
+			this.catNameElem = document.getElementById('cat-name');
 			this.catImageElem = document.getElementById('cat-img');
 
 			this.render();
 		},
 		render: function() {
+			this.catNameElem.textContent = octopus.getCat().name;
 			this.catImageElem.src = octopus.getCat().imgSrc;
 		}
 	};
