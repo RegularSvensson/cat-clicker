@@ -37,6 +37,16 @@ $( document ).ready(function() {
 		}
 	};
 
+	var catListView = {
+		init: function() {
+			this.catListElem = document.getElementById('cat-list');
+			this.render();
+		},
+		render: function() {
+			// continue here!
+		}
+	};
+
 	/* ======= Octopus ======= */
 	var octopus = {
 		init: function() {
