@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+
+/*
 	function hideAllCats() {
 		$(".cat").hide();
 	}
@@ -61,5 +63,5 @@ $( document ).ready(function() {
 		count = parseInt(count) + 1;
 		$("#counter5").text(count);
 	});
-
+*/
 });
