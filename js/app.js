@@ -1,5 +1,31 @@
 $( document ).ready(function() {
 
+	/* ====== Model ====== */
+
+	var model = {
+		currentCat: null,
+		cats: [
+			{
+				clickcount: 0,
+				name: Meron,
+				imgSrc: "img/cat1.jpg"
+			},
+			{
+				clickcount: 0,
+				name: Tim,
+				imgSrc: "img/cat2.jpg"
+			},
+		]
+	}
+
+	/* ====== Octopus ====== */
+
+
+	/* ====== View ====== */
+
+	var viewCats = {
+		
+	}
 
 /*
 	function hideAllCats() {
