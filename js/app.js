@@ -29,5 +29,6 @@ $( document ).ready(function() {
 			this.catImageElem.src = octopus.getCat().imgSrc;
 		}
 	};
+	octopus.init();
 
 });
