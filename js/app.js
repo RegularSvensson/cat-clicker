@@ -2,11 +2,19 @@ $( document ).ready(function() {
 
 	/* ======= Model ======= */
 	var model = {
-		cat: {
-			clickCount: 0,
-			name: "Meron",
-			imgSrc: "img/cat1.jpg"
-		}
+		cats: [
+			{
+				clickCount: 0,
+				name: "Meron",
+				imgSrc: "img/cat1.jpg"
+			},
+			{
+				clickCount: 0,
+				name: "Paula",
+				imgSrc: "img/cat2.jpg"	
+			}
+		]
+		
 	};
 
 	/* ======= View ======= */
