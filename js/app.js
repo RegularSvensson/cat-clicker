@@ -36,6 +36,10 @@ $( document ).ready(function() {
 		},
 		getCat: function() {
 			return model.cat;
+		},
+		incrementCounter: function() {
+			model.cat.clickCount++;
+			catView.render();
 		}
 	};
 
