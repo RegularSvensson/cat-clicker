@@ -7,5 +7,16 @@ $( document ).ready(function() {
 		}
 	};
 
+	/* ======= Octopus ======= */
+	var octopus = {
+		init: function() {
+			catView.init();
+		},
+		getCat: function() {
+			return model.cat;
+		}
+	};
+
+
 
 });
