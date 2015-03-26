@@ -1,7 +1,13 @@
 $( document ).ready(function() {
-	$( "#clicker" ).click(function() {
-		var count = $("#counter").text();
+	$( "#cat1" ).click(function() {
+		var count = $("#count1").text();
 		count = parseInt(count) + 1;
-		$("#counter").text(count);
+		$("#count1").text(count);
+	});
+
+	$( "#cat2" ).click(function() {
+		var count = $("#count2").text();
+		count = parseInt(count) + 1;
+		$("#count2").text(count);
 	});
 });
