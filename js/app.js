@@ -18,5 +18,16 @@ $( document ).ready(function() {
 	};
 
 
+	/* ======= View ======= */
+	var catView = {
+		init: function() {
+			this.catImageElem = document.getElementById('cat-img');
+
+			this.render();
+		},
+		render: function() {
+			this.catImageElem.src = octopus.getCat().imgSrc;
+		}
+	};
 
 });
