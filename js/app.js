@@ -1,13 +1,12 @@
-$( document ).ready(function() {
-	$( "#cat1" ).click(function() {
-		var count = $("#count1").text();
-		count = parseInt(count) + 1;
-		$("#count1").text(count);
-	});
+// grab cat class and store in var 
+var cats = $(".cat");
+// grab button class and store in var
+var buttons = $("button");
 
-	$( "#cat2" ).click(function() {
-		var count = $("#count2").text();
-		count = parseInt(count) + 1;
-		$("#count2").text(count);
-	});
-});
+//declare function to hide all cats
+function hideAllCats(){
+	for (var i=0; i<cats.length; i++){
+		$(cats[i]).hide();
+	}
+}
+hideAllCats();
