@@ -1,1 +1,1 @@
-=== Cat Clicker v1 ===
+=== Cat Clicker v2 ===
