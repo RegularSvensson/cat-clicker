@@ -9,17 +9,6 @@ $( document ).ready(function() {
 		}
 	};
 
-	/* ======= Octopus ======= */
-	var octopus = {
-		init: function() {
-			catView.init();
-		},
-		getCat: function() {
-			return model.cat;
-		}
-	};
-
-
 	/* ======= View ======= */
 	var catView = {
 		init: function() {
@@ -31,6 +20,17 @@ $( document ).ready(function() {
 			this.catImageElem.src = octopus.getCat().imgSrc;
 		}
 	};
+
+	/* ======= Octopus ======= */
+	var octopus = {
+		init: function() {
+			catView.init();
+		},
+		getCat: function() {
+			return model.cat;
+		}
+	};
+
 	octopus.init();
 
 });
