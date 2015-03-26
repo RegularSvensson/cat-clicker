@@ -53,10 +53,10 @@ $( document ).ready(function() {
 			catView.init();
 		},
 		getCat: function() {
-			return model.cat;
+			return model.cats[0];
 		},
 		incrementCounter: function() {
-			model.cat.clickCount++;
+			model.cats[0].clickCount++;
 			catView.render();
 		}
 	};
