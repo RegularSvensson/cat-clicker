@@ -3,6 +3,8 @@ $( document ).ready(function() {
 	/* ======= Model ======= */
 	var model = {
 		cat: {
+			clickCount: 0,
+			name: "Meron",
 			imgSrc: "img/cat1.jpg"
 		}
 	};
