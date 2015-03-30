@@ -2,19 +2,11 @@ $( document ).ready(function() {
 
 	/* ======= Model ======= */
 	var model = {
-		cats: [
-			{
-				clickCount: 0,
-				name: "Meron",
-				imgSrc: "img/cat1.jpg"
-			},
-			{
-				clickCount: 0,
-				name: "Paula",
-				imgSrc: "img/cat2.jpg"	
-			}
-		]
-		
+		cat: {
+			clickCount: 0,
+			name: "Meron",
+			imgSrc: "img/cat1.jpg"
+		}
 	};
 
 	/* ======= View ======= */
@@ -37,26 +29,16 @@ $( document ).ready(function() {
 		}
 	};
 
-	var catListView = {
-		init: function() {
-			this.catListElem = document.getElementById('cat-list');
-			this.render();
-		},
-		render: function() {
-			// continue here!
-		}
-	};
-
 	/* ======= Octopus ======= */
 	var octopus = {
 		init: function() {
 			catView.init();
 		},
 		getCat: function() {
-			return model.cats[0];
+			return model.cat;
 		},
 		incrementCounter: function() {
-			model.cats[0].clickCount++;
+			model.cat.clickCount++;
 			catView.render();
 		}
 	};
